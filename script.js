@@ -11,7 +11,7 @@ PlayerImage.src = "./assets/shadow_dog.png";
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    CTX.fillRect(50, 50, 100, 100);
+    CTX.drawImage(PlayerImage, 0, 0, SpriteWidth, SpriteHeight, 0, 0, SpriteWidth, SpriteHeight);
 
     requestAnimationFrame(Animate);
 }
