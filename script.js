@@ -16,7 +16,9 @@ let FrameY = 0;
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    CTX.drawImage(PlayerImage, 0, 0, SpriteWidth, SpriteHeight, 0, 0, SpriteWidth, SpriteHeight);
+    CTX.drawImage(PlayerImage, FrameX * SpriteWidth, FrameY * SpriteHeight,
+        SpriteWidth, SpriteHeight,
+        0, 0, SpriteWidth, SpriteHeight);
 
     requestAnimationFrame(Animate);
 }
