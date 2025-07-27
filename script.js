@@ -11,6 +11,8 @@ PlayerImage.src = "./assets/shadow_dog.png";
 
 const SpriteWidth = 575;
 const SpriteHeight = 523;
+let FrameX = 0;
+let FrameY = 0;
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
