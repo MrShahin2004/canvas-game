@@ -16,6 +16,8 @@ let FrameY = 0;
 let GameFrame = 0;
 let StaggerFrames = 5;
 
+let SpriteAnimations = [];
+
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
     let Position = Math.floor(GameFrame / StaggerFrames) % 6;
