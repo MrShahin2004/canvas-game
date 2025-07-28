@@ -17,6 +17,7 @@ let GameFrame = 0;
 let StaggerFrames = 5;
 
 let SpriteAnimations = [];
+let AnimationStates = [];
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
