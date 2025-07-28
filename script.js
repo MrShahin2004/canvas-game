@@ -22,14 +22,6 @@ function Animate() {
         SpriteWidth, SpriteHeight,
         0, 0, SpriteWidth, SpriteHeight);
 
-    if (GameFrame % StaggerFrames === 0) {
-        if (FrameX < 6) {
-            FrameX++;
-        } else {
-            FrameX = 0;
-        }
-    }
-
     GameFrame++;
     requestAnimationFrame(Animate);
 }
