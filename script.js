@@ -20,6 +20,12 @@ function Animate() {
         SpriteWidth, SpriteHeight,
         0, 0, SpriteWidth, SpriteHeight);
 
+    if (FrameX < 6) {
+        FrameX++;
+    } else {
+        FrameX = 0;
+    }
+
     requestAnimationFrame(Animate);
 }
 
