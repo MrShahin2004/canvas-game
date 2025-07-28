@@ -13,6 +13,8 @@ const SpriteWidth = 575;
 const SpriteHeight = 523;
 let FrameX = 0;
 let FrameY = 0;
+let GameFrame = 0;
+let StaggerFrames = 2;
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
