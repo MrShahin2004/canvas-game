@@ -83,7 +83,10 @@ function Animate() {
     let Position =
         Math.floor(GameFrame / StaggerFrames) % SpriteAnimations["idle"].loc.length;
 
-    CTX.drawImage(PlayerImage, FrameX, FrameY * SpriteHeight,
+    let FrameX = SpriteWidth * Position;
+    let FrameY = SpriteAnimations["idle"].loc[Position].y;
+
+    CTX.drawImage(PlayerImage, FrameX, FrameY,
         SpriteWidth, SpriteHeight,
         0, 0, SpriteWidth, SpriteHeight);
 
