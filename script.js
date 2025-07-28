@@ -18,7 +18,10 @@ let StaggerFrames = 5;
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    CTX.drawImage(PlayerImage, FrameX * SpriteWidth, FrameY * SpriteHeight,
+    let Position = Math.floor(GameFrame / StaggerFrames) % 6;
+    FrameX = SpriteWidth * Position;
+
+    CTX.drawImage(PlayerImage, FrameX, FrameY * SpriteHeight,
         SpriteWidth, SpriteHeight,
         0, 0, SpriteWidth, SpriteHeight);
 
