@@ -11,8 +11,6 @@ PlayerImage.src = "./assets/shadow_dog.png";
 
 const SpriteWidth = 575;
 const SpriteHeight = 523;
-let FrameX = 0;
-let FrameY = 0;
 let GameFrame = 0;
 let StaggerFrames = 5;
 
