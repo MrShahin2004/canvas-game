@@ -1,7 +1,11 @@
 "use strict";
 const $ = document;
 
-let PlayerState = "run";
+let PlayerState = "idle";
+let Dropdown = $.querySelector("#animations");
+Dropdown.addEventListener("change", (event) => {
+    PlayerState = event.target.value;
+});
 
 const Canvas = $.querySelector("#canvas");
 let CTX = Canvas.getContext("2d");
