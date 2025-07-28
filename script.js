@@ -65,7 +65,7 @@ AnimationStates.forEach((state,
         loc: []
     };
 
-    for (let j = 0 ; j < state.frames ; j++) {
+    for (let j = 0; j < state.frames; j++) {
         let PositionX = j * SpriteWidth;
         let PositionY = index * SpriteHeight;
 
@@ -80,10 +80,10 @@ console.log(SpriteAnimations);
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
     let Position =
-        Math.floor(GameFrame / StaggerFrames) % SpriteAnimations["idle"].loc.length;
+        Math.floor(GameFrame / StaggerFrames) % SpriteAnimations[PlayerState].loc.length;
 
     let FrameX = SpriteWidth * Position;
-    let FrameY = SpriteAnimations["idle"].loc[Position].y;
+    let FrameY = SpriteAnimations[PlayerState].loc[Position].y;
 
     CTX.drawImage(PlayerImage, FrameX, FrameY,
         SpriteWidth, SpriteHeight,
