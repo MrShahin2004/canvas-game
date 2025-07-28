@@ -80,8 +80,8 @@ console.log(SpriteAnimations);
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    let Position = Math.floor(GameFrame / StaggerFrames) % 6;
-    FrameX = SpriteWidth * Position;
+    let Position =
+        Math.floor(GameFrame / StaggerFrames) % SpriteAnimations["idle"].loc.length;
 
     CTX.drawImage(PlayerImage, FrameX, FrameY * SpriteHeight,
         SpriteWidth, SpriteHeight,
