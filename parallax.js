@@ -28,8 +28,8 @@ function Animate() {
     CTX.drawImage(BackgroundLayer4, x, 0);
     CTX.drawImage(BackgroundLayer4, x2, 0);
 
-    if (x < -1000) {
-        x = 0;
+    if (x < -2400) {
+        x = 2400 + x2 - GameSpeed;
     } else {
         x -= GameSpeed;
     }
