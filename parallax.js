@@ -7,3 +7,5 @@ let CanvasWidth = Canvas.width = 800;
 let CanvasHeight = Canvas.height = 700;
 
 let GameSpeed = 5;
+let BackgroundLayer1 = new Image();
+BackgroundLayer1.src = "./assets/backgroundLayers/layer-1.png";
