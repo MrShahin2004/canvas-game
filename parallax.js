@@ -25,20 +25,6 @@ let x2 = 2400;
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    CTX.drawImage(BackgroundLayer4, x, 0);
-    CTX.drawImage(BackgroundLayer4, x2, 0);
-
-    if (x < -2400) {
-        x = 2400 + x2 - GameSpeed;
-    } else {
-        x -= GameSpeed;
-    }
-
-    if (x2 < -2400) {
-        x2 = 2400 + x - GameSpeed;
-    } else {
-        x2 -= GameSpeed;
-    }
 
     requestAnimationFrame(Animate);
 }
