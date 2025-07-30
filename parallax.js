@@ -9,3 +9,11 @@ let GameSpeed = 5;
 
 let BackgroundLayer1 = new Image();
 BackgroundLayer1.src = "./assets/backgroundLayers/layer-1.png";
+let BackgroundLayer2 = new Image();
+BackgroundLayer1.src = "./assets/backgroundLayers/layer-2.png";
+let BackgroundLayer3 = new Image();
+BackgroundLayer1.src = "./assets/backgroundLayers/layer-3.png";
+let BackgroundLayer4 = new Image();
+BackgroundLayer1.src = "./assets/backgroundLayers/layer-4.png";
+let BackgroundLayer5 = new Image();
+BackgroundLayer1.src = "./assets/backgroundLayers/layer-5.png";
