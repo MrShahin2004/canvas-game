@@ -25,7 +25,8 @@ let x2 = 2400;
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    CTX.drawImage(BackgroundLayer2, x, 0);
+    CTX.drawImage(BackgroundLayer4, x, 0);
+    CTX.drawImage(BackgroundLayer4, x2, 0);
 
     if (x < -1000) {
         x = 0;
