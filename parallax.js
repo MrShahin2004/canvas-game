@@ -34,6 +34,12 @@ function Animate() {
         x -= GameSpeed;
     }
 
+    if (x2 < -2400) {
+        x2 = 2400 + x - GameSpeed;
+    } else {
+        x2 -= GameSpeed;
+    }
+
     requestAnimationFrame(Animate);
 }
 
