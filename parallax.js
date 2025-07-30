@@ -24,7 +24,14 @@ let x = 0;
 let x2 = 2400;
 
 function Animate() {
-    CTX.drawImage(BackgroundLayer2, 0, 0);
+    CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
+    CTX.drawImage(BackgroundLayer2, x, 0);
+
+    if (x < -1000) {
+        x = 0;
+    } else {
+        x -= GameSpeed;
+    }
 
     requestAnimationFrame(Animate);
 }
