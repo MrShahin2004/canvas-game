@@ -16,4 +16,12 @@ BackgroundLayer3.src = "./assets/backgroundLayers/layer-3.png";
 let BackgroundLayer4 = new Image();
 BackgroundLayer4.src = "./assets/backgroundLayers/layer-4.png";
 let BackgroundLayer5 = new Image();
-BackgroundLayer1.src = "./assets/backgroundLayers/layer-5.png";
+BackgroundLayer5.src = "./assets/backgroundLayers/layer-5.png";
+
+function Animate() {
+    CTX.drawImage(BackgroundLayer2, 0, 0);
+
+    requestAnimationFrame(Animate);
+}
+
+Animate();
