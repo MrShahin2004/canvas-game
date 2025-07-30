@@ -18,6 +18,11 @@ BackgroundLayer4.src = "./assets/backgroundLayers/layer-4.png";
 let BackgroundLayer5 = new Image();
 BackgroundLayer5.src = "./assets/backgroundLayers/layer-5.png";
 
+// The start point width
+let x = 0;
+// The end point width
+let x2 = 2400;
+
 function Animate() {
     CTX.drawImage(BackgroundLayer2, 0, 0);
 
