@@ -9,7 +9,11 @@
     <title>Parallax Effect</title>
 </head>
 <body id="body">
-<canvas id="canvas"></canvas>
+<div id="container">
+    <canvas id="canvas"></canvas>
+    <p>Game speed: <span id="show-game-speed"></span></p>
+    <input class="slider" id="slider" max="20" min="0" type="range" value="5">
+</div>
 
 <script src="./parallax.js"></script>
 </body>
