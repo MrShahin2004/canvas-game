@@ -58,8 +58,20 @@ let Layer5 = new Layer(BackgroundLayer5, 1.25);
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
+    Layer1.update();
+    Layer1.draw();
+
+    Layer2.update();
+    Layer2.draw();
+
+    Layer3.update();
+    Layer3.draw();
+
     Layer4.update();
     Layer4.draw();
+
+    Layer5.update();
+    Layer5.draw();
 
     requestAnimationFrame(Animate);
 }
