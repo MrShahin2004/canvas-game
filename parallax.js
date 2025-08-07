@@ -18,6 +18,40 @@ BackgroundLayer4.src = "./assets/backgroundLayers/layer-4.png";
 let BackgroundLayer5 = new Image();
 BackgroundLayer5.src = "./assets/backgroundLayers/layer-5.png";
 
+class Layer {
+    constructor(image, speedModifier) {
+        this.x = 0;
+        this.y = 0;
+        this.width = 2400;
+        this.height = 700;
+        this.x2 = this.width;
+        this.image = image;
+        this.speedModifier = speedModifier;
+        this.speed = GameSpeed * this.speedModifier;
+    }
+
+    update() {
+        this.speed = GameSpeed * this.speedModifier;
+        if (this.x <= -this.width) {
+            this.x = this.width + this.x2 - this.speed;
+        }
+
+        if (this.x2 <= -this.width) {
+            this.x2 = this.width + this.x - this.speed;
+        }
+
+        this.x = Math.floor(this.x - this.speed);
+        this.x2 = Math.floor(this.x2 - this.speed);
+    }
+
+    draw() {
+        CTX.drawImage(this.image, this.x, this.y, this.width, this.height);
+        CTX.drawImage(this.image, this.x2, this.y, this.width, this.height);
+    }
+}
+
+let Layer4 = new Layer(BackgroundLayer4, 0.5);
+
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
 
