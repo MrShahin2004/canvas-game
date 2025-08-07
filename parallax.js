@@ -18,6 +18,16 @@ BackgroundLayer4.src = "./assets/backgroundLayers/layer-4.png";
 let BackgroundLayer5 = new Image();
 BackgroundLayer5.src = "./assets/backgroundLayers/layer-5.png";
 
+let SliderEl = $.querySelector("#slider");
+SliderEl.value = GameSpeed;
+let ShowGameSpeed = $.querySelector("#show-game-speed");
+ShowGameSpeed.innerHTML = GameSpeed;
+
+SliderEl.addEventListener("change", (event) => {
+    GameSpeed = event.target.value;
+    ShowGameSpeed.innerHTML = GameSpeed;
+});
+
 class Layer {
     constructor(image, speedModifier) {
         this.x = 0;
