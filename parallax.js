@@ -56,6 +56,8 @@ let Layer3 = new Layer(BackgroundLayer3, 0.75);
 let Layer4 = new Layer(BackgroundLayer4, 1);
 let Layer5 = new Layer(BackgroundLayer5, 1.25);
 
+let GameObject = [Layer1, Layer2, Layer3, Layer4, Layer5];
+
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
     Layer1.update();
