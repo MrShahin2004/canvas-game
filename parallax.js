@@ -60,9 +60,9 @@ let GameObject = [Layer1, Layer2, Layer3, Layer4, Layer5];
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    GameObject.forEach((item) => {
-        item.draw();
-        item.update();
+    GameObject.forEach((object) => {
+        object.draw();
+        object.update();
     });
 
     requestAnimationFrame(Animate);
