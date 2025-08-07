@@ -50,7 +50,11 @@ class Layer {
     }
 }
 
-let Layer4 = new Layer(BackgroundLayer4, 0.5);
+let Layer1 = new Layer(BackgroundLayer1, 0.25);
+let Layer2 = new Layer(BackgroundLayer2, 0.5);
+let Layer3 = new Layer(BackgroundLayer3, 0.75);
+let Layer4 = new Layer(BackgroundLayer4, 1);
+let Layer5 = new Layer(BackgroundLayer5, 1.25);
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
