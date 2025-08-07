@@ -54,6 +54,8 @@ let Layer4 = new Layer(BackgroundLayer4, 0.5);
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
+    Layer4.update();
+    Layer4.draw();
 
     requestAnimationFrame(Animate);
 }
