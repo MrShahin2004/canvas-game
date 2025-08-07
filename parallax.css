@@ -2,12 +2,27 @@
     background: black;
 }
 
-#canvas {
+#container {
     position: absolute;
-    border: 3px solid white;
     width: 800px;
-    height: 700px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    font-size: 25px;
+}
+
+#slider {
+    width: 100%;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#canvas {
+    position: relative;
+    border: 3px solid white;
+    width: 800px;
+    height: 700px;
 }
