@@ -13,15 +13,20 @@ class Enemy {
         this.width = 100;
         this.height = 100;
     }
+    update() {
+        this.x++;
+        this.y++;
+    }
+    draw() {
+        CTX.fillRect(this.x, this.y, this.width, this.height);
+    }
 }
 let Enemy1 = new Enemy();
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-
-    Enemy1.x++;
-    Enemy1.y++;
-    CTX.fillRect(Enemy1.x, Enemy1.y, Enemy1.width, Enemy1.height);
+    Enemy1.update();
+    Enemy1.draw();
 
     requestAnimationFrame(Animate);
 }
