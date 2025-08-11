@@ -16,10 +16,6 @@ let CanvasHeight = Canvas.height = 1000;
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
 
-    Enemy1.x++;
-    Enemy1.y++;
-    CTX.fillRect(Enemy1.x, Enemy1.y, Enemy1.width, Enemy1.height);
-
     requestAnimationFrame(Animate);
 }
 
