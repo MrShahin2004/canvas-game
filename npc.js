@@ -5,6 +5,8 @@ let Canvas = $.querySelector("#canvas");
 let CTX = Canvas.getContext("2d");
 let CanvasWidth = Canvas.width = 500;
 let CanvasHeight = Canvas.height = 1000;
+let NumberOfEnemies = 100;
+let EnemiesArray = [];
 
 class Enemy {
     constructor() {
