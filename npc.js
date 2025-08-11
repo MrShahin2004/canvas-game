@@ -31,8 +31,10 @@ for (let i = 0 ; i < NumberOfEnemies; i++) {
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
-    Enemy1.update();
-    Enemy1.draw();
+    EnemiesArray.forEach((enemy) => {
+        enemy.update();
+        enemy.draw();
+    })
 
     requestAnimationFrame(Animate);
 }
