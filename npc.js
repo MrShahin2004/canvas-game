@@ -24,7 +24,10 @@ class Enemy {
         CTX.fillRect(this.x, this.y, this.width, this.height);
     }
 }
-let Enemy1 = new Enemy();
+
+for (let i = 0 ; i < NumberOfEnemies; i++) {
+    EnemiesArray.push(new Enemy());
+}
 
 function Animate() {
     CTX.clearRect(0, 0, CanvasWidth, CanvasHeight);
