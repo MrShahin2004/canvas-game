@@ -17,8 +17,8 @@ class Enemy {
         this.speed = Math.random() * 4 - 2;
     }
     update() {
-        this.x++;
-        this.y++;
+        this.x += this.speed;
+        this.y += this.speed;
     }
     draw() {
         CTX.fillRect(this.x, this.y, this.width, this.height);
