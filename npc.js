@@ -34,7 +34,7 @@ function Animate() {
     EnemiesArray.forEach((enemy) => {
         enemy.update();
         enemy.draw();
-    })
+    });
 
     requestAnimationFrame(Animate);
 }
