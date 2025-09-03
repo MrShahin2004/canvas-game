@@ -21,10 +21,12 @@ class Enemy {
         this.spriteWidth = 293;
         this.spriteHeight = 155;
     }
+
     update() {
         this.x += this.speed;
         this.y += this.speed;
     }
+
     draw() {
         CTX.fillRect(this.x, this.y, this.width, this.height);
         CTX.drawImage(EnemyImage, 0, 0, this.spriteWidth, this.spriteHeight,
@@ -32,7 +34,7 @@ class Enemy {
     }
 }
 
-for (let i = 0 ; i < NumberOfEnemies; i++) {
+for (let i = 0; i < NumberOfEnemies; i++) {
     EnemiesArray.push(new Enemy());
 }
 
