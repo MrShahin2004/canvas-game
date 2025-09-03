@@ -25,6 +25,7 @@ class Enemy {
     }
     draw() {
         CTX.fillRect(this.x, this.y, this.width, this.height);
+        CTX.drawImage(EnemyImage, this.x, this.y, this.width, this.height);
     }
 }
 
