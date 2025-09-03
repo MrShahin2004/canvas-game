@@ -18,8 +18,8 @@ class Enemy {
         this.speed = Math.random() * 4 - 2;
         this.spriteWidth = 293;
         this.spriteHeight = 155;
-        this.width = this.spriteWidth / 3;
-        this.height = this.spriteHeight / 3;
+        this.width = this.spriteWidth / 2.5;
+        this.height = this.spriteHeight / 2.5;
     }
 
     update() {
