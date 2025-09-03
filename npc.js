@@ -26,6 +26,9 @@ class Enemy {
     update() {
         this.x += this.speed;
         this.y += this.speed;
+
+        // Animating the sprites
+        this.frame > 4 ? this.frame = 0 : this.frame++;
     }
 
     draw() {
