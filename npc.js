@@ -20,6 +20,7 @@ class Enemy {
         this.spriteHeight = 155;
         this.width = this.spriteWidth / 2.5;
         this.height = this.spriteHeight / 2.5;
+        this.frame = 0;
     }
 
     update() {
