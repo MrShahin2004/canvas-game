@@ -29,8 +29,7 @@ class Enemy {
     }
 
     draw() {
-        CTX.fillRect(this.x, this.y, this.width, this.height);
-        CTX.drawImage(EnemyImage, 0, 0, this.spriteWidth, this.spriteHeight,
+        CTX.drawImage(EnemyImage, this.frame * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight,
             this.x, this.y, this.width, this.height);
     }
 }
