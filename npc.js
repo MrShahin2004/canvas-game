@@ -8,6 +8,9 @@ let CanvasHeight = Canvas.height = 1000;
 let NumberOfEnemies = 100;
 let EnemiesArray = [];
 
+let EnemyImage = new Image();
+EnemyImage.src = "./assets/enemies/enemy1.png"
+
 class Enemy {
     constructor() {
         this.x = Math.random() * CanvasWidth;
