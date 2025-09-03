@@ -15,11 +15,11 @@ class Enemy {
     constructor() {
         this.x = Math.random() * CanvasWidth;
         this.y = Math.random() * CanvasHeight;
-        this.width = 100;
-        this.height = 100;
         this.speed = Math.random() * 4 - 2;
         this.spriteWidth = 293;
         this.spriteHeight = 155;
+        this.width = this.spriteWidth / 3;
+        this.height = this.spriteHeight / 3;
     }
 
     update() {
