@@ -5,7 +5,7 @@ let Canvas = $.querySelector("#canvas");
 let CTX = Canvas.getContext("2d");
 let CanvasWidth = Canvas.width = 500;
 let CanvasHeight = Canvas.height = 1000;
-let NumberOfEnemies = 20;
+let NumberOfEnemies = 1000;
 let EnemiesArray = [];
 
 let GameFrame = 0;
@@ -29,9 +29,9 @@ class Enemy {
     }
 
     update() {
-        this.x = (Math.sin(this.angle * Math.PI / 180) * this.curve)
+        this.x = (Math.sin(this.angle * Math.PI / 270) * Canvas.width / 2)
             + Canvas.width / 2 - (this.width / 2);
-        this.y = (Math.cos(this.angle * Math.PI / 180) * this.curve)
+        this.y = (Math.cos(this.angle * Math.PI / 360) * Canvas.height / 2)
             + Canvas.height / 2 - (this.height / 2);
         this.angle += this.angleSpeed;
         if (this.x + this.width < 0) {
