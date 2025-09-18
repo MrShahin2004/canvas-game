@@ -30,7 +30,7 @@ class Enemy {
 
     update() {
         this.x = (Math.sin(this.angle * Math.PI / 180) * this.curve)
-            + Canvas.width / 2 - this.width;
+            + Canvas.width / 2 - (this.width / 2);
         // this.y += Math.sin(this.angle) * this.curve;
         this.angle += this.angleSpeed;
         if (this.x + this.width < 0) {
