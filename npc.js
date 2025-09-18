@@ -5,7 +5,7 @@ let Canvas = $.querySelector("#canvas");
 let CTX = Canvas.getContext("2d");
 let CanvasWidth = Canvas.width = 500;
 let CanvasHeight = Canvas.height = 1000;
-let NumberOfEnemies = 500;
+let NumberOfEnemies = 100;
 let EnemiesArray = [];
 
 let GameFrame = 0;
@@ -14,20 +14,20 @@ class Enemy {
     constructor() {
         this.image = new Image();
         this.image.src = "./assets/enemies/enemy1.png";
-        this.x = Math.random() * CanvasWidth;
-        this.y = Math.random() * CanvasHeight;
-        this.speed = Math.random() * 4 - 2;
+        // this.speed = Math.random() * 4 - 2;
         this.spriteWidth = 293;
         this.spriteHeight = 155;
         this.width = this.spriteWidth / 2.5;
         this.height = this.spriteHeight / 2.5;
+        this.x = Math.random() * (CanvasWidth - this.width);
+        this.y = Math.random() * (CanvasHeight - this.height);
         this.frame = 0;
         this.flapSpeed = Math.floor(Math.random() * 3 + 1);
     }
 
     update() {
-        this.x += this.speed;
-        this.y += this.speed;
+        this.x += Math.random() * 5 - 2.5;
+        this.y += Math.random() * 5 - 2.5;
 
         // Animating the sprites
         if (GameFrame % this.flapSpeed === 0) {
