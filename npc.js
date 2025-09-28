@@ -28,7 +28,7 @@ class Enemy {
     update() {
         this.x = 0;
         this.y = 0;
-        this.angle += this.angleSpeed;
+
         if (this.x + this.width < 0) {
             this.x = Canvas.width;
         }
