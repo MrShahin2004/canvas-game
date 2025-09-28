@@ -21,6 +21,8 @@ class Enemy {
         this.height = this.spriteHeight / 2.5;
         this.x = Math.random() * (Canvas.width - this.width);
         this.y = Math.random() * (Canvas.height - this.height);
+        this.NewX = Math.random() * (Canvas.width - this.width);
+        this.NewY = Math.random() * (Canvas.height - this.height);
         this.frame = 0;
         this.flapSpeed = Math.floor(Math.random() * 3 + 1);
     }
