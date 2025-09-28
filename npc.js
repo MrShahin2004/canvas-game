@@ -25,9 +25,19 @@ class Enemy {
         this.NewY = Math.random() * (Canvas.height - this.height);
         this.frame = 0;
         this.flapSpeed = Math.floor(Math.random() * 3 + 1);
+        this.interval = Math.floor(Math.random() * 200 + 50);
     }
 
     update() {
+        if (GameFrame % this.interval === 0) {
+            this.NewX = Math.random() * (Canvas.width - this.width);
+            this.NewY = Math.random() * (Canvas.height - this.height);
+        }
+
+        let DX = this.x - this.NewX;
+        let DY = this.y - this.NewY;
+        this.x -= DX / 20;
+        this.y -= DY / 20;
         // this.x = 0;
         // this.y = 0;
 
