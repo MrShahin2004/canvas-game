@@ -5,7 +5,7 @@ let Canvas = $.querySelector("#canvas");
 let CTX = Canvas.getContext("2d");
 let CanvasWidth = Canvas.width = 500;
 let CanvasHeight = Canvas.height = 1000;
-let NumberOfEnemies = 1000;
+let NumberOfEnemies = 10;
 let EnemiesArray = [];
 
 let GameFrame = 0;
@@ -26,8 +26,8 @@ class Enemy {
     }
 
     update() {
-        this.x = 0;
-        this.y = 0;
+        // this.x = 0;
+        // this.y = 0;
 
         if (this.x + this.width < 0) {
             this.x = Canvas.width;
