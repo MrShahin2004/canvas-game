@@ -65,8 +65,7 @@ let AnimationStates = [
     }
 ];
 
-AnimationStates.forEach((state,
-                         index) => {
+AnimationStates.forEach((state, index) => {
     let Frames = {
         loc: []
     };
@@ -75,7 +74,7 @@ AnimationStates.forEach((state,
         let PositionX = j * SpriteWidth;
         let PositionY = index * SpriteHeight;
 
-        Frames.loc.push({x: PositionX, y: PositionY});
+        Frames.loc.push({ x: PositionX, y: PositionY });
     }
 
     SpriteAnimations[state.name] = Frames;
