@@ -38,8 +38,6 @@ class Enemy {
         let DY = this.y - this.NewY;
         this.x -= DX / 20;
         this.y -= DY / 20;
-        // this.x = 0;
-        // this.y = 0;
 
         if (this.x + this.width < 0) {
             this.x = Canvas.width;
