@@ -6,7 +6,6 @@ let Rectangle1 = {
     width: 50,
     height: 50
 };
-
 let Rectangle2 = {
     x: 20,
     y: 10,
