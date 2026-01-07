@@ -1,6 +1,7 @@
 "use strict";
 
 // Defined 2 sample rectangles to test the collision.
+// Now, on the branch "collision".
 let Rectangle1 = {
     x: 5,
     y: 5,
